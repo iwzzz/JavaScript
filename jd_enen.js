@@ -114,7 +114,7 @@ function jsonParse(str) {
       $.msg($.name, '', '请勿随意在BoxJs输入框修改内容\n建议通过脚本去获取cookie')
       return [];
     }
-  }
+  } 
 }
 
 function Env(t, e) {
