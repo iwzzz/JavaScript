@@ -12,7 +12,7 @@
  let project_id = 179655;//项目ID
  let loop = 1;//过滤已做 1过滤 2不过滤
  let operator = 4;//运营商 0默认 1中国移动 2中国联通 3中国电信 4实卡 5虚卡
- let scope= '';//指定号码  输入号码或号段前五位或省(例：四川)
+ let phone_num= '';//指定号码  输入号码或号段前五位或省(例：四川)
  let scope_black = '';//排除号段  长度为3至7为位且支持多个，用逗号分离
  let number = 1;//运行次数
  let journal = 1;//获取验证码时日志 0无日志 1有日志
@@ -181,7 +181,7 @@
   function method3(timeout = 3 * 1000) {
     return new Promise((resolve) => {
         let url = {
-            url: `http://103.60.165.148:81/api/get_mobile?token=${token}&project_id=${project_id}&project_type=${project_type}&operator=${operator}&loop=${loop}&scope=${scope}&scope_black=${scope_black}`, 
+            url: `http://103.60.165.148:81/api/get_mobile?token=${token}&project_id=${project_id}&project_type=${project_type}&operator=${operator}&loop=${loop}&phone_num=${phone_num}&scope_black=${scope_black}`, 
             headers: { 
                 "User-Agent": ua,
             },
