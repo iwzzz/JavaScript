@@ -14,13 +14,13 @@
  let operator = 4;//运营商 0默认 1中国移动 2中国联通 3中国电信 4实卡 5虚卡
  let scope= '';//指定号码  输入号码或号段前五位或省(例：四川)
  let scope_black = '';//排除号段  长度为3至7为位且支持多个，用逗号分离
- let number = 2;//运行次数
- let journal = 0;//获取验证码时日志 0无日志 1有日志
+ let number = 1;//运行次数
+ let journal = 1;//获取验证码时日志 0无日志 1有日志
  let ua = 'okhttp/3.12.0';
  const Notify = 0; //0为关闭通知，1为打开通知,默认为0
  const debug = 0; //0为关闭调试，1为打开调试,默认为0
  //////////////////////
- //let sm = require('./shiming.txt');
+
  let yzjm = process.env.yzjm;
  let yzjmArr = [];
  let smArr = [];
@@ -340,7 +340,7 @@
 
                     await $.wait(1 * 1000);
                     console.log("【"+await time()+" 】释放号码成功   🎉")
-                    
+                    await method6();
 
                } else {  
 
@@ -400,19 +400,7 @@ function method6(timeout = 3 * 1000) {
                
                  msg += '第 '+num+' 次随机生成一个实名信息为：\n';
                  msg += smxm + "   " +smsfz +"\n\n";
-                 //console.log(JSON.stringify(url))
-              
-                /* if (result.message == "登录成功") {
-                    token = result.token;
-                   
-                    console.log("【"+await time()+" 】"+result.message+"   🎉")
-                   
-                    console.log("【"+await time()+" 】账户余额："+result.data[0].money+ "  待释放余额："+result.data[0].money_1);
-                    //console.log("token为："+result.token)
-                 } else {  
-                     console.log(`\n登录失败  ❌`)
-                 }*/
- 
+
              } catch (e) {
                  console.log(e)
              } finally {
