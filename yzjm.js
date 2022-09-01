@@ -33,7 +33,6 @@
  let mobile = '';
  let code = '';
  let scriptVersion = "1.0.0";
- let scriptVersionLatest = '';
 // let token = process.env.yztoken;
  let project_type = 1;
  let num = 0;
@@ -50,9 +49,7 @@
              8 * 60 * 60 * 1000).toLocaleString()} \n=========================================\n`);
 
          await poem();
-         await getVersion();
-         console.log(`\n============ 当前版本：${scriptVersion}  最新版本：${scriptVersionLatest} ============`)
-
+         console.log(`\n============ 当前版本：${scriptVersion}  最新版本：============`)
          console.log("\n=================== 本次共运行 "+number+" 次 ===================")
  
          if (debug) {
@@ -515,25 +512,7 @@ function time(){
    });
  }
 
-/**
- * 获取远程版本
- */
-function getVersion(timeout = 3 * 1000) {
-    return new Promise((resolve) => {
-        let url = {
-            url: `https://raw.githubusercontents.com/iwzzz/JavaScript/main/yzjm.js`,
-        }
-        $.get(url, async (err, resp, data) => {
-            try {
-                scriptVersionLatest = data.match(/scriptVersion = "([\d\.]+)"/)[1]
-            } catch (e) {
-                $.logErr(e, resp);
-            } finally {
-                resolve()
-            }
-        }, timeout)
-    })
-}
+
 
 
 
