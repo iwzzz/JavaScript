@@ -32,7 +32,7 @@
  let token = '';
  let mobile = '';
  let code = '';
- let scriptVersion = "1.6.2";
+ let scriptVersion = "1.0.0";
  let scriptVersionLatest = '';
 // let token = process.env.yztoken;
  let project_type = 1;
@@ -503,7 +503,7 @@ function time(){
        async (err, resp, data) => {
          try {
            data = JSON.parse(data);
-           log(`${data.content}  \n————《${data.origin}》${data.author}`);
+           console.log(`${data.content}  \n————《${data.origin}》${data.author}`);
          } catch (e) {
            log(e, resp);
          } finally {
