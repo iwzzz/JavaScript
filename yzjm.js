@@ -32,7 +32,7 @@
  let token = '';
  let mobile = '';
  let code = '';
- let scriptVersion = "1.0.0";
+ let scriptVersion = "1.0.1";
  let scriptVersionLatest = '';
 // let token = process.env.yztoken;
  let project_type = 1;
