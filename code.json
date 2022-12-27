@@ -1,10 +1,11 @@
 {
+    "dayingjia":"1"
     "ownerId":"c9a9c8b2",
     "scancode_id":"675",
     "code":1,
     "mtcode":0,
     "msgi":"脚本运行正常",
-    "msg":"脚本地址\n\n红旗智联   https://raw.githubusercontent.com/LinYuanovo/scripts/main/hqzl.js\n富豪人生  https://kireinasakura.coding.net/p/could/d/there/git/raw/master/fhrs.js\n青碳行  https://raw.githubusercontent.com/liuqi6968/-/main/qtx.js\n支付宝赚点 https://kireinasakura.coding.net/p/could/d/there/git/raw/master/zdsd.js\n走路  https://kireinasakura.coding.net/p/could/d/there/git/raw/master/zl.js\n漫画  https://kireinasakura.coding.net/p/could/d/there/git/raw/master/manhua.js\n豆伴  https://kireinasakura.coding.net/p/could/d/there/git/raw/master/newdb.js\n点乐  https://kireinasakura.coding.net/p/could/d/there/git/raw/master/dlhb.js\n九章头条  https://raw.githubusercontent.com/leafTheFish/DeathNote/main/jztt.js",
+    "msg":""
     "mtcode1":1,
     "msgi1":"交流：https://t.me/luobook888",
     "msg1":"已删库，无法运行此脚本",
